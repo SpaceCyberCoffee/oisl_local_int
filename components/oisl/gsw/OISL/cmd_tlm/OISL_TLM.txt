@@ -1,0 +1,56 @@
+TELEMETRY OISL OISL_HK_TLM LITTLE_ENDIAN "OISL_Hk_tlm_t"
+  APPEND_ID_ITEM CCSDS_STREAMID       16 UINT 0x0898  "CCSDS Packet Identification" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SEQUENCE       16 UINT         "CCSDS Packet Sequence Control" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_LENGTH         16 UINT         "CCSDS Packet Data Length" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SECONDS        32 UINT         "CCSDS Telemetry Secondary Header (seconds)" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SUBSECS        16 UINT         "CCSDS Telemetry Secondary Header (subseconds)" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SPARE          32 UINT         ""
+  APPEND_ITEM    CMD_ERR_COUNT         8 UINT         "Command Error Count"
+  APPEND_ITEM    CMD_COUNT             8 UINT         "Command Count"
+  APPEND_ITEM    DEVICE_ERR_COUNT      8 UINT         "Device Command Error Count"
+  APPEND_ITEM    DEVICE_COUNT          8 UINT         "Device Command Count"
+  APPEND_ITEM    DEVICE_ENABLED        8 UINT         "Device Enable Status"
+    STATE DISABLED 0
+    STATE ENABLED  1 
+  # OISL_Device_HK_tlm_t
+  APPEND_ITEM    DEVICE_COUNTER       32 UINT         "Reported Device Command Counter"
+  APPEND_ITEM    DEVICE_CONFIG        32 UINT         "Reported Device Configuration"
+  APPEND_ITEM    DEVICE_STATUS        32 UINT         "Reported Device Status"
+
+TELEMETRY OISL OISL_DATA_TLM LITTLE_ENDIAN "OISL_Device_tlm_t"
+  APPEND_ID_ITEM CCSDS_STREAMID       16 UINT 0x0899  "CCSDS Packet Identification" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SEQUENCE       16 UINT         "CCSDS Packet Sequence Control" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_LENGTH         16 UINT         "CCSDS Packet Data Length" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SECONDS        32 UINT         "CCSDS Telemetry Secondary Header (seconds)" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SUBSECS        16 UINT         "CCSDS Telemetry Secondary Header (subseconds)" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SPARE          32 UINT         ""
+  # OISL_Device_Data_tlm_t
+  APPEND_ITEM    DEVICE_COUNTER       32 UINT         "Reported Device Command Counter"
+  APPEND_ITEM    BACKWARD_ISL_VECTOR_X      64 FLOAT        "ISL_vector x component backward satellite"
+  APPEND_ITEM    BACKWARD_ISL_VECTOR_Y      64 FLOAT        "ISL_vector y component backward satellite"
+  APPEND_ITEM    BACKWARD_ISL_VECTOR_Z      64 FLOAT        "ISL_vector z component backward satellite"
+  APPEND_ITEM    FORWARD_ISL_VECTOR_X       64 FLOAT        "ISL_vector x component forward satellite"
+  APPEND_ITEM    FORWARD_ISL_VECTOR_Y       64 FLOAT        "ISL_vector y component forward satellite"
+  APPEND_ITEM    FORWARD_ISL_VECTOR_Z       64 FLOAT        "ISL_vector z component forward satellite"
+  APPEND_ITEM    FORWARD_ALIGNMENT            8 UINT        "ISL Forward alignment Status"
+   STATE DISALIGNED 0
+   STATE ALIGNED    1
+  APPEND_ITEM    BACKWARD_ALIGNMENT           8 UINT        "ISL Backward alignment Status"
+   STATE DISALIGNED 0
+   STATE ALIGNED    1
+  APPEND_ITEM    FORWARD_CONNECTION           8 UINT        "ISL Forward connection Status"
+   STATE DISCONNECTED 0
+   STATE CONNECTED    1
+  APPEND_ITEM    BACKWARD_CONNECTION          8 UINT        "ISL Backward connection Status"
+   STATE DISCONNECTED 0
+   STATE CONNECTED    1
+  APPEND_ITEM    OGS_ALIGNMENT                8 UINT        "ISL OGS alignment Status"
+   STATE DISALIGNED 0
+   STATE ALIGNED    1
+  APPEND_ITEM    MEMORY_USED                 64 FLOAT       "Memory used for OISL data in kB"
+  APPEND_ITEM    MEMORY_AVAILABLE             8 UINT        "Available if there are less then 8GB of payload data"
+   STATE NOT_AVAILABLE 0
+   STATE AVAILABLE     1
+  APPEND_ITEM    TRANSFER_ACTIVE              8 UINT        "Is there a file transfer during the connection? 1 or 0"
+   STATE INACTIVE 0
+   STATE ACTIVE   1

@@ -1,0 +1,142 @@
+{   
+    "TYPE": "TEXT",
+    "SOURCE": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/files_Test/plainText.txt",
+    "DESTINATION": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/components/oisl/fsw/src/fileInput/plainText.txt",
+    "CONTENT": 
+        "La ricerca della felicità (dove sta, fra'?)
+        Io sognavo di spiccare il volo (seh)
+        Ora che volo è tutta mia la città (la città)
+        Ma non ha senso se volo da solo
+        E guardo avanti e non mi volto mai (non voltarti mai)
+        Come fate ad amare per finta?
+        Passa il tempo, ma non svolto mai (mai)
+        Buttami giù dal cielo dammi una spinta
+        Tatuaggi in vista come un ribelle
+        Pensavamo di spaccare il mondo
+        Invece ha vinto chi ce li ha sotto pelle
+        E guardiamo tutto andare a fondo
+        Vedo male e solo come un cane
+        Forse è meglio se non metto a fuoco
+        Annuso catrame e filigrane
+        L'emozione dura troppo poco
+        Sai che non c'è amore se
+        Mi stai usando e io uso te
+        I soldi parlano
+        E tu li ascolti più di quanto ascolti me
+        Siamo sempre soli, sì
+        Siamo davvero liberi
+        I giorni passano
+        E li vivo come se fossero gli ultimi
+        Certe volte vorrei piangere
+        Per provarti cosa so provare
+        Ma non mi escono le lacrime
+        Dici: "L'amore non si può comprare" (non si può)
+        Guardo solo i colori dei soldi
+        Così ho un arcobaleno in tasca
+        Ancora inseguo dei biglietti sporchi
+        E alla fine la somma non basta (non basta mai)
+        Tra la paranoia e il paradiso
+        L'ascensore va al decimo cielo
+        Ma si è rotto ed è bloccato al primo
+        Ti assicuro, nessuno è sincero (nessuno fra')
+        E il mio cuore è senza batteria
+        E nessuno riesce a ripararlo
+        È meglio se non mi fai compagnia
+        Te l'hanno detto che sono un bastardo
+        Sai che non c'è amore se
+        Mi stai usando e io uso te
+        I soldi parlano
+        E tu li ascolti più di quanto ascolti me
+        Siamo sempre soli, sì
+        Siamo davvero liberi
+        I giorni passano
+        E li vivo come se fossero gli ultimi (ah, yeah)
+        Ma tutte quelle tipe, quelle banconote le hai viste
+        Mi chiedi come faccio a essere sempre triste?
+        Tu sei perduto quando il vento soffia via le piste
+        O sei nato per 'sta vita oppure non esiste
+        Affoghiamo dentro al Moet & Chandon
+        Le tue frasi d'amore tutte uguali, un carillon (seh)
+        E quando arrivo in alto poi non so più scendere
+        Una stella è sempre sola perché pensa solo a splendere
+        Prova a farmi sanguinare senza che mi buchi
+        Provami a scottare, sì, ma senza che mi bruci
+        Prova a farmi innamorare senza trucchi
+        Rendimi felice quando spengono 'ste luci
+        Sai che non c'è amore se
+        Mi stai usando e io uso te
+        I soldi parlano
+        E tu li ascolti più di quanto ascolti me
+        Siamo sempre soli, sì
+        Siamo davvero liberi
+        I giorni passano
+        E li vivo come se fossero gli ultimi"
+        SONG 2!
+        Fatti l’uno per l’altra, credici (Credici)
+        Tu con i soldi, io con i debiti (Tu con i soldi, io con i debiti)
+        Non eri bella normale ma di quella bellezza che abbaglia
+        E quindi oltre che per l’occhiaia
+        Io c’avevo sempre su i Ray-Ban
+        Il tuo tipo non accettava che non volevi starci più assieme
+        Ti trattava come un cane perché era stato allevato da iene
+        La prima volta che l’abbiamo fatto alla festa di quelle tue due amiche ricche
+        Ricordo la terra ha tremato, magnitudo 10 scala Richter
+        Profumo di donna come Al Pacino
+        Io dietro di te, tu che stringi il cuscino
+        Negli occhi come di Pechino
+        Rossi un casino, tipo pachino
+        I problemi ora sono giganti, tipo elefanti in una cristalleria
+        Se non me ne vado via è come se muoio ad orologeria
+        I tuoi genitori ti han sbattuto fuori, ti chiamo, hai la batteria scarica
+        Fatti ogni singola droga, per asciugarti ogni singola lacrima
+        Quando ti trova e minaccia, alla fine hai capito che lui no, non scherza
+        Ma se sotto la pioggia balliamo, sopravvivremo anche alla tempesta
+        Così
+        Anche col buio e tuoni al nostro orizzonte
+        Con tutti contro ma tu con me, io con te
+        Come se fossimo scappati di casa (nanana)
+        E così
+        Anche col buio e tuoni al nostro orizzonte
+        Con tutti contro ma tu con me, io con te
+        Come se fossimo scappati di casa (Nanana)
+        Mi son sempre chiesto che cosa avrei fatto domani
+        Finché ti accorgi che
+        Il fottuto domani è già oggi
+        E non hai sincronizzato i fottuti orologi
+        Sognavo più euri possibili imbavagliando il banchiere
+        Perché uno come me, frate, se vede la luna la vede soltanto sul fondo bicchiere
+        Dio si era incazzato per una mela
+        Con tutta la merda che ho fatto prova a pensare con me quanto cazzo se la sia presa
+        Se vinco contro la coscienza, vinco la guerra con la mia esistenza
+        Tu profumi di soldi, i soldi di coca, la coca di benza
+        Cosa mi tiene legato qua? Nemmeno io so cosa voglio (No)
+        Provando a diventare ricco con la paranoia che sennò mi impicco
+        Sono fuori come un paraurti, amici stupidi, nemici furbi
+        Muoviti a far la valigia
+        Il primo giorno del resto della nostra vita
+        È meglio che la guidi tu, non voglio fare macelli
+        A me sembra che la patente me l’abbia consegnata Bocelli
+        In silenzio tremiamo, arriviamo
+        (Dove?) Dove nella vostra lingua
+        (Cosa?) Sappiamo soltanto dire “noi non parliamo la vostra lingua”
+        Così
+        Anche col buio e tuoni al nostro orizzonte
+        Con tutti contro ma tu con me, io con te
+        Come se fossimo scappati di casa (Nanana)
+        E così
+        Anche col buio e tuoni al nostro orizzonte
+        Con tutti contro ma tu con me, io con te
+        Come se fossimo scappati di casa (Nanana)
+        [Outro]
+        Freddo come un serpente
+        Io che ero solo anche in mezzo alla gente
+        Siamo il fango e il diamante, per sempre
+        Io che ero solo anche in mezzo alla gente
+        Siamo il fango e il diamante, per sempre
+        Per sempre, per sempre
+        Il giorno che distribuivano il cuore
+        Penso io fossi altrove, la testa chissà dove
+        Piuttosto che l’amore, preferivo un Range Rover
+        Adesso fuori piove, adesso noi game over
+        Game over, game over, game over
+}

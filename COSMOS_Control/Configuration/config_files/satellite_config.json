@@ -1,0 +1,1098 @@
+{
+	"subsystems":{
+		"SAMPLE_DEBUG":{
+			"tc":{
+				"SAMPLE_REQ_HK": {
+					"stream_id": "0x18FB",
+					"description": "Request house keeping TM"
+					},
+				"SAMPLE_RESET_DATA_CNT_CC": {
+					"stream_id": "0x18FA",
+					"description": "Sample Reset Data Counter for data recording"
+					},
+				"SAMPLE_SWITCH_CLOCK": {
+					"stream_id": "0x18FA",
+					"description": "Sample command to switch from one clock to the other"
+					},
+				"SAMPLE_NOOP_CC": {
+					"stream_id": "0x18FA",
+					"description": "Sample NOOP"
+					},
+				"SAMPLE_LOAD_FILE": {
+					"stream_id": "0x18FA",
+					"parameter_names": ["FILE_NUM"],
+					"parameter_values": [11],
+					"sizes": [32],
+					"types": ["UINT32"],
+					"descriptions": ["Load file using file number ID"]
+					},
+				"SAMPLE_SUBSYSTEM_POWER_SWITCH_CC": {
+					"stream_id": "0x18FA",
+					"parameter_names": ["SUBSYS_POWER_SWITCH"],
+					"parameter_values": [1],
+					"sizes": [32],
+					"types": ["UINT32"],
+					"descriptions": ["Subsystem ID to switch Power State 1:GPS 2:FSS 3:IMU 4:ST"]
+					},
+				"SAMPLE_REQ_DATA": {
+					"stream_id": "0x18FB",
+					"description": "Request data TM"
+					}
+			},
+			"tm":{
+				"SAMPLE_HK_TLM":{
+					"TIME_DATA":{
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 16000,
+						"description": "Time data"
+						},
+					"SUBSECONDS_DATA":{
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 16000,
+						"description": "Subseconds data"
+						},
+					"BATT_CURR_A_DATA": {
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "double",
+						"size": 16000,
+						"description": "Battery current A"
+						},
+					"TH_CONT_UH_DATA": {
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "double",
+						"size": 16000,
+						"description": "Thermal control unit heater"
+						},
+					"BOXES_CURR_DATA": {
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "double",
+						"size": 16000,
+						"description": "Boxes current"
+						},
+					"AMBIENT_T_DATA": {
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "double",
+						"size": 16000,
+						"description": "Ambient temperature"
+						},
+					"BATT_CURR_A_DATA_2": {
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "double",
+						"size": 16000,
+						"description": "Battery current A second clock"
+						},
+					"TH_CONT_UH_DATA_2": {
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "double",
+						"size": 16000,
+						"description": "Thermal control unit heater second clock"
+						},
+					"BOXES_CURR_DATA_2": {
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "double",
+						"size": 16000,
+						"description": "Boxes current second clock"
+						},
+					"AMBIENT_T_DATA_2": {
+						"type": "BLOCK",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "double",
+						"size": 16000,
+						"description": "Ambient temperature second clock"
+						},
+					"DATA_COUNTER":{
+						"type": "uint32",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 32,
+						"description": "Index of data to be stored in HK"
+						},
+					"TIME_STEPS_CNT":{
+						"type": "uint32",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 32,
+						"description": "Reported Number of current time steps"
+						},
+					"NUM_OF_LOADED_FILE":{
+						"type": "uint32",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 32,
+						"description": "Number of file currently loaded"
+						},
+					"SECOND_CLOCK_ENABLED": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "Second clock Enable Status"
+						}
+	
+					},
+					"SAMPLE_DATA_TLM":{
+						"CCSDS_SECONDS": {
+							"type": "uint32",
+							"unit": "uint32",
+							"sent_type": "uint32",
+							"convert_to": "uint32",
+							"size": 32,
+							"description": "CCSDS Telemetry Secondary Header (seconds)"
+							},
+							"BATTERY_CURRENT_A": {
+							"type": "DERIVED",
+							"unit": "0",
+							"sent_type": "0",
+							"convert_to": "double",
+							"size": 0,
+							"description": "Battery current A"
+							},
+							"THERMAL_CONTROL_UNIT_HEATER": {
+							"type": "DERIVED",
+							"unit": "0",
+							"sent_type": "0",
+							"convert_to": "double",
+							"size": 0,
+							"description": "Thermal control unit heater"
+							},
+							"BOXES_CURRENT": {
+							"type": "DERIVED",
+							"unit": "0",
+							"sent_type": "0",
+							"convert_to": "double",
+							"size": 0,
+							"description": "Boxes current"
+							},
+							"AMBIENT_TEMPERATURE": {
+							"type": "DERIVED",
+							"unit": "0",
+							"sent_type": "0",
+							"convert_to": "double",
+							"size": 0,
+							"description": "Ambient temperature"
+							},
+							"CLOCK_COUNTER": {
+							"type": "uint16",
+							"unit": "uint16",
+							"sent_type": "uint16",
+							"convert_to": "uint16",
+							"size": 16,
+							"description": "Clock COunter useful for DT"
+							}
+				}
+			}
+	
+		},
+		"GENERIC_IMU_DEBUG": {
+			"tc": {
+				"GENERIC_IMU_ENABLE_CC":{
+					"stream_id": "0x1925",
+					"descriptions": ["Generic_imu Enable Command"]
+					},
+				"GENERIC_IMU_DISABLE_CC":{
+					"stream_id": "0x1925",
+					"descriptions": ["Generic_imu Disable Command"]
+					},
+				"GENERIC_IMU_REQ_HK":{
+					"stream_id": "0x1926",
+					"descriptions": ["Generic_imu Request HK Packet Command"]
+					},
+				"GENERIC_IMU_REQ_DATA":{
+					"stream_id": "0x1926",
+					"descriptions": ["Generic_imu Request Data Packet Command"]
+					}
+				},
+	
+			"tm": {
+				"GENERIC_IMU_HK_TLM": {
+					"DEVICE_ENABLED": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "Device Enable Status"
+						}
+					},
+				"GENERIC_IMU_DATA_TLM": {
+					"X_LINEAR_ACCELERATION": {
+						"type": "float32",
+						"unit": "float32",
+						"sent_type": "float32",
+						"convert_to": "float32",
+						"size": 32,
+						"description": "Linear acceleration in the X-direction"
+						},
+					"Y_LINEAR_ACCELERATION": {
+						"type": "float32",
+						"unit": "float32",
+						"sent_type": "float32",
+						"convert_to": "float32",
+						"size": 32,
+						"description": "Linear acceleration in the Y-direction"
+						},
+					"Z_LINEAR_ACCELERATION": {
+						"type": "float32",
+						"unit": "float32",
+						"sent_type": "float32",
+						"convert_to": "float32",
+						"size": 32,
+						"description": "Linear acceleration in the Z-direction"
+						},
+					"X_ANGULAR_ACCELERATION": {
+						"type": "float32",
+						"unit": "float32",
+						"sent_type": "float32",
+						"convert_to": "float32",
+						"size": 32,
+						"description": "Angular acceleration in the X-direction"
+						},
+					"Y_ANGULAR_ACCELERATION": {
+						"type": "float32",
+						"unit": "float32",
+						"sent_type": "float32",
+						"convert_to": "float32",
+						"size": 32,
+						"description": "Angular acceleration in the Y-direction"
+						},
+					"Z_ANGULAR_ACCELERATION": {
+						"type": "float32",
+						"unit": "float32",
+						"sent_type": "float32",
+						"convert_to": "float32",
+						"size": 32,
+						"description": "Angular acceleration in the Z-direction"
+						}
+				}
+				}
+			},
+		"GENERIC_FSS_DEBUG": {
+			"tc": {
+				"GENERIC_FSS_ENABLE_CC": {
+					"stream_id": "0x1920",
+					"descriptions": [
+						"Generic_fss Enable Command"
+					]
+				},
+				"GENERIC_FSS_DISABLE_CC": {
+					"stream_id": "0x1920",
+					"descriptions": [
+						"Generic_fss Disable Command"
+					]
+				},
+				"GENERIC_FSS_REQ_DATA": {
+					"stream_id": "0x1921",
+					"descriptions": [
+						"Generic_fss Request Data Packet Command"
+					]
+				}
+			},
+			"tm": {
+				"GENERIC_FSS_HK_TLM": {
+					"DEVICE_ENABLED": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "Device Enable Status"
+					}
+				},
+				"GENERIC_FSS_DATA_TLM": {
+					"RECEIVED_COUNT": {
+						"type": "uint16",
+						"unit": "uint16",
+						"sent_type": "uint16",
+						"convert_to": "uint16",
+						"size": 16,
+						"description": "Received Count"
+					},
+					"CCSDS_SEQUENCE": {
+						"type": "uint16",
+						"unit": "uint16",
+						"sent_type": "uint16",
+						"convert_to": "uint16",
+						"size": 16,
+						"description": "CCSDS Packet Sequence Control"
+					},
+					"CCSDS_SECONDS": {
+						"type": "uint32",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 32,
+						"description": "CCSDS Telemetry Secondary Header (seconds)"
+					},
+					"CCSDS_SUBSECS": {
+						"type": "uint16",
+						"unit": "uint16",
+						"sent_type": "uint16",
+						"convert_to": "uint16",
+						"size": 16,
+						"description": "CCSDS Telemetry Secondary Header (subseconds)"
+					},
+					"GENERIC_FSS_ALPHA": {
+						"type": "float32",
+						"unit": "float32",
+						"sent_type": "float32",
+						"convert_to": "float32",
+						"size": 32,
+						"description": "Raw generic_fss data alpha angle (-60 to 60)"
+					},
+					"GENERIC_FSS_BETA": {
+						"type": "float32",
+						"unit": "float32",
+						"sent_type": "float32",
+						"convert_to": "float32",
+						"size": 32,
+						"description": "Raw generic_fss data beta angle (-60 to 60)"
+					}
+				}
+			}
+		},
+		"GENERIC_MAG_DEBUG": {
+			"tc": {
+				"GENERIC_MAG_ENABLE_CC": {
+					"stream_id": "0x192A",
+					"descriptions": [
+						"Generic_mag Enable Command"
+					]
+				},
+				"GENERIC_MAG_DISABLE_CC": {
+					"stream_id": "0x192A",
+					"descriptions": [
+						"Generic_mag Disable Command"
+					]
+				},
+				"GENERIC_MAG_REQ_DATA": {
+					"stream_id": "0x192B",
+					"descriptions": [
+						"Generic_mag Request Data Packet Command"
+					]
+				},
+				"GENERIC_MAG_REQ_HK": {
+					"stream_id": "0x192B",
+					"descriptions": [
+						"Generic_mag Request HK Packet Command"
+					]
+				}
+			},
+			"tm": {
+				"GENERIC_MAG_HK_TLM": {
+					"DEVICE_ENABLED": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "Device Enable Status"
+					}
+				},
+				"GENERIC_MAG_DATA_TLM": {
+					"CCSDS_SEQUENCE": {
+						"type": "uint16",
+						"unit": "uint16",
+						"sent_type": "uint16",
+						"convert_to": "uint16",
+						"size": 16,
+						"description": "CCSDS Packet Sequence Control"
+					},
+					"CCSDS_SECONDS": {
+						"type": "uint32",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 32,
+						"description": "CCSDS Telemetry Secondary Header (seconds)"
+					},
+					"CCSDS_SUBSECS": {
+						"type": "uint16",
+						"unit": "uint16",
+						"sent_type": "uint16",
+						"convert_to": "uint16",
+						"size": 16,
+						"description": "CCSDS Telemetry Secondary Header (subseconds)"
+					},
+					"RAW_MAG_X": {
+						"type": "int32",
+						"unit": "int32",
+						"sent_type": "int32",
+						"convert_to": "int32",
+						"size": 32,
+						"description": "Raw mag data x component (nT)"
+					},
+					"RAW_MAG_Y": {
+						"type": "int32",
+						"unit": "int32",
+						"sent_type": "int32",
+						"convert_to": "int32",
+						"size": 32,
+						"description": "Raw mag data y component (nT)"
+					},
+					"RAW_MAG_Z": {
+						"type": "int32",
+						"unit": "int32",
+						"sent_type": "int32",
+						"convert_to": "int32",
+						"size": 32,
+						"description": "Raw mag data z component (nT)"
+					}
+				}
+			}
+		},
+		"GENERIC_REACTION_WHEEL_DEBUG": {
+			"tc": {
+				"GENERIC_RW_REQ_DATA": {
+					"stream_id": "0x1992",
+					"descriptions": [
+						"Generic Reaction Wheel Request Data Command"
+					]
+				},
+				"GENERIC_RW_SET_TORQUE": {
+					"stream_id": "0x1992",
+					"descriptions": [
+						"Generic Reaction Wheel Set Torque Command"
+					]
+				}
+			},
+			"tm": {
+				"GENRW_HK_TLM_T": {
+					"CCSDS_SECONDS": {
+						"type": "uint32",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 32,
+						"description": "Seconds elapsed since sim start"
+					},
+					"MOMENTUM_NMS_0": {
+						"type": "float64",
+						"unit": "float64",
+						"sent_type": "float64",
+						"convert_to": "float64",
+						"size": 64,
+						"description": "Reaction Wheel 0 Momentum in Newton-meter-seconds"
+					},
+					"MOMENTUM_NMS_1": {
+						"type": "float64",
+						"unit": "float64",
+						"sent_type": "float64",
+						"convert_to": "float64",
+						"size": 64,
+						"description": "Reaction Wheel 1 Momentum in Newton-meter-seconds"
+					},
+					"MOMENTUM_NMS_2": {
+						"type": "float64",
+						"unit": "float64",
+						"sent_type": "float64",
+						"convert_to": "float64",
+						"size": 64,
+						"description": "Reaction Wheel 2 Momentum in Newton-meter-seconds"
+					}
+				}
+				}
+		},
+		"NOVATEL_OEM615_DEBUG": {
+			"tc": {
+				"NOVATEL_OEM615_ENABLE_CC":{
+					"stream_id": "0x1870",
+					"descriptions": ["Generic_fss Enable Command"]
+					},
+				"NOVATEL_OEM615_DISABLE_CC":{
+					"stream_id": "0x1870",
+					"descriptions": ["Generic_fss Disable Command"]
+					},
+				"NOVATEL_OEM615_REQ_DATA":{
+					"stream_id": "0x1871",
+					"descriptions": ["Novatel_oem615 Request Data Packet Command"]
+					}
+				},
+			"tm": {
+				"NOVATEL_OEM615_HK_TLM": {
+					"DEVICE_ENABLED": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "Device Enable Status"
+					}
+				},
+				"NOVATEL_OEM615_DATA_TLM" :{
+					"ECEF_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECEF Position X (meters)"
+					},
+					"ECEF_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECEF Position Y (meters)"
+					},
+					"ECEF_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECEF Position Z (meters)"
+					},
+					"VEL_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECEF Velocity X (m/s)"
+					},
+					"VEL_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECEF Velocity Y (m/s)"
+					},
+					"VEL_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECEF Velocity Z (m/s)"
+					},
+					"ECI_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECI Position X (meters)"
+					},
+					"ECI_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECI Position Y (meters)"
+					},
+					"ECI_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECI Position Z (meters)"
+					},
+					"VEL_I_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECI Velocity X (m/s)"
+					},
+					"VEL_I_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECI Velocity Y (m/s)"
+					},
+					"VEL_I_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "ECI Velocity Z (m/s)"
+					}
+					}
+				}
+			},
+		"GENERIC_STAR_TRACKER_DEBUG": {
+			"tc": {
+				"GENERIC_STAR_TRACKER_ENABLE_CC":{
+					"stream_id": "0x1935",
+					"descriptions": ["Generic_star_tracker Enable Command"]
+					},
+				"GENERIC_STAR_TRACKER_DISABLE_CC":{
+					"stream_id": "0x1935",
+					"descriptions": ["Generic_star_tracker Disable Command"]
+					}
+				},
+			"tm": {
+				"GENERIC_STAR_TRACKER_HK_TLM": {
+					"DEVICE_ENABLED": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "Device Enable Status"
+						}
+					},
+				"GENERIC_STAR_TRACKER_DATA_TLM": {
+					"STAR_TRACKER_Q0": {
+						"type": "float64",
+						"unit": "float64",
+						"sent_type": "float64",
+						"convert_to": "float64",
+						"size": 64,
+						"description": "generic_star_tracker data q0 component"
+						},
+					"STAR_TRACKER_Q1": {
+						"type": "float64",
+						"unit": "float64",
+						"sent_type": "float64",
+						"convert_to": "float64",
+						"size": 64,
+						"description": "generic_star_tracker data q1 component"
+						},
+					"STAR_TRACKER_Q2": {
+						"type": "float64",
+						"unit": "float64",
+						"sent_type": "float64",
+						"convert_to": "float64",
+						"size": 64,
+						"description": "generic_star_tracker data q2 component"
+						},
+					"STAR_TRACKER_Q3": {
+						"type": "float64",
+						"unit": "float64",
+						"sent_type": "float64",
+						"convert_to": "float64",
+						"size": 64,
+						"description": "generic_star_tracker data q3 component"
+						},
+					"STAR_TRACKER_IS_VALID": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "Valid (1) or not (0)"
+						}
+				}
+				}
+			},
+			"GENERIC_ADCS_DEBUG": {
+				"tc": {
+					"GENERIC_ADCS_SET_MODE_CC":{
+					"stream_id": "0x1940",
+					"parameter_names": ["GNC_MODE"],
+					"parameter_values": ["SUNSAFE_MODE", "OISL_MODE_F", "OISL_MODE_B"],
+					"sizes": [8],
+					"types": ["UINT8"],
+					"descriptions": ["SET ADCS MODE Command"]
+					}
+				},
+				"tm": {
+				"GENERIC_ADCS_DI": {
+					  "CSS0_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, X component"
+					},
+					"CSS0_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Y component"
+					},
+					"CSS0_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Z component"
+					},
+					"SCALE0": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 scale factor"
+					},
+					"PERCENTON0": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 percent on"
+					},
+					"CSS1_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, X component"
+					},
+					"CSS1_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Y component"
+					},
+					"CSS1_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Z component"
+					},
+					"SCALE1": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 scale factor"
+					},
+					"PERCENTON1": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 percent on"
+					},
+					"CSS2_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, X component"
+					},
+					"CSS2_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Y component"
+					},
+					"CSS2_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Z component"
+					},
+					"SCALE2": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 scale factor"
+					},
+					"PERCENTON2": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 percent on"
+					},
+					"CSS3_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, X component"
+					},
+					"CSS3_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Y component"
+					},
+					"CSS3_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Z component"
+					},
+					"SCALE3": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 scale factor"
+					},
+					"PERCENTON3": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 percent on"
+					},
+					"CSS4_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, X component"
+					},
+					"CSS4_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Y component"
+					},
+					"CSS4_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Z component"
+					},
+					"SCALE4": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 scale factor"
+					},
+					"PERCENTON4": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 percent on"
+					},
+					"CSS5_X": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, X component"
+					},
+					"CSS5_Y": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Y component"
+					},
+					"CSS5_Z": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 axis in body frame, Z component"
+					},
+					"SCALE5": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 scale factor"
+					},
+					"PERCENTON5": {
+					  "type": "float64",
+					  "unit": "float64",
+					  "sent_type": "float64",
+					  "convert_to": "float64",
+					  "size": 64,
+					  "description": "CSS 0 percent on"
+					}
+				}
+				}
+			},
+			"OISL_DEBUG": {
+			"tc": {
+				"OISL_ENABLE_CC":{
+					"stream_id": "0x1898",
+					"descriptions": ["OISL Enable Command"]
+					},
+				"OISL_DISABLE_CC":{
+					"stream_id": "0x1898",
+					"descriptions": ["OISL Disable Command"]
+					},
+				"OISL_SEND_FILE":{
+					"stream_id": "0x1898",
+					"parameter_names": ["TARGET_SAT", "FILE_NAME"],
+					"parameter_values": ["BACKWARD_SAT", "FORWARD_SAT", "GROUND_STATION", "/home/jstar/Desktop/github-nos3/COSMOS_Control/Execution/OISL/files_received/O.txt", "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/OGS.txt"],
+					"sizes": [8, 800],
+					"types": ["UINT8", "STRING"],
+					"descriptions": ["OISL CFDP"]
+				}
+			},
+			"tm": {
+				"OISL_HK_TLM": {
+					"DEVICE_ENABLED": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "Device Enable Status"
+						}
+					},
+				"OISL_DATA_TLM": {
+					"CCSDS_SECONDS": {
+						"type": "uint32",
+						"unit": "uint32",
+						"sent_type": "uint32",
+						"convert_to": "uint32",
+						"size": 32,
+						"description": "SIM seconds"
+						},
+					"FORWARD_ALIGNMENT": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "ALigned (1) or not (0)"
+						},
+					"BACKWARD_ALIGNMENT": {
+						"type": "uint8",
+						"unit": "uint8",
+						"sent_type": "uint8",
+						"convert_to": "uint8",
+						"size": 8,
+						"description": "ALigned (1) or not (0)"
+						}
+				}
+				}
+			},
+			"SIM_42_TRUTH": {
+				"tm": {
+					"SIM_42_TRUTH_DATA": {
+						"WN_X_DPS": {
+							"type": "DERIVED",
+							  "unit": "DERIVED",
+							  "sent_type": "DERIVED",
+							  "convert_to": "DERIVED",
+							  "size": 0,
+							  "description": "Body Angular Rate X in Body Frame (deg/s)"
+						},
+						"WN_Y_DPS": {
+							"type": "DERIVED",
+							  "unit": "DERIVED",
+							  "sent_type": "DERIVED",
+							  "convert_to": "DERIVED",
+							  "size": 0,
+							  "description": "Body Angular Rate Y in Body Frame (deg/s)"
+						},
+						"WN_Z_DPS": {
+							"type": "DERIVED",
+							  "unit": "DERIVED",
+							  "sent_type": "DERIVED",
+							  "convert_to": "DERIVED",
+							  "size": 0,
+							  "description": "Body Angular Rate Z in Body Frame (deg/s)"
+						},
+						"QN_1": {
+							"type": "float64",
+							  "unit": "float64",
+							  "sent_type": "float64",
+							  "convert_to": "float64",
+							  "size": 64,
+							  "description": "Quat 1"
+						},
+						"QN_2": {
+							"type": "float64",
+							  "unit": "float64",
+							  "sent_type": "float64",
+							  "convert_to": "float64",
+							  "size": 64,
+							  "description": "Quat 2"
+						},
+						"QN_3": {
+							"type": "float64",
+							  "unit": "float64",
+							  "sent_type": "float64",
+							  "convert_to": "float64",
+							  "size": 64,
+							  "description": "Quat 3"
+						},
+						"QN_4": {
+							"type": "float64",
+							"unit": "float64",
+							"sent_type": "float64",
+							"convert_to": "float64",
+							"size": 64,
+							"description": "Quat 4"
+						},
+						"GEOCENTRIC_LATITUDE": {
+							"type": "DERIVED",
+							  "unit": "DERIVED",
+							  "sent_type": "DERIVED",
+							  "convert_to": "DERIVED",
+							  "size": 0,
+							  "description": "Geocentric Lat in degrees"
+						}
+					}
+				}
+			}
+		}
+	}
+	

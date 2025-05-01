@@ -1,0 +1,18 @@
+#
+# Metadata
+#
+.vagrant
+.vscode
+.idea
+
+#
+# Packages and Build Files
+#
+__pycache__
+*.dat
+*.so
+build/
+venv
+vgcore*
+core.*
+log.txt

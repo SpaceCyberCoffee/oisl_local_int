@@ -1,0 +1,26 @@
+[
+{
+    "gs_name": "Tiflis",
+    "gs_operations_start_hour": 8,
+    "gs_operations_start_minute": 30,
+    "gs_operations_end_hour": 23,
+    "gs_operations_end_minute": 30,
+    "gs_elevation": 575,
+    "gs_latitude": 41.7,
+    "gs_longitude": 44.8,
+    "gs_min_elev_angle": 30,
+    "ECEF": [3384.41090081, 3360.86534927, 4221.1653491]
+},
+{
+    "gs_name": "Igrim",
+    "gs_operations_start_hour": 8,
+    "gs_operations_start_minute": 30,
+    "gs_operations_end_hour": 23,
+    "gs_operations_end_minute": 30,
+    "gs_elevation": 6,
+    "gs_latitude": 63,
+    "gs_longitude": 64,
+    "gs_min_elev_angle": 30,
+    "ECEF": [1272.74126992, 2609.50631505, 5659.98313253]
+}
+]

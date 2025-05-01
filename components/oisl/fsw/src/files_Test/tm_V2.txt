@@ -1,0 +1,36 @@
+{
+  "TYPE": "TM",
+  "header": {
+    "satellite_id": "SAT-001",
+    "timestamp": "2024-10-18T08:30:00Z",
+    "tm_type": "health",
+    "action_required": ["diagnostics", "relay"]
+  },
+  "telemetry_data": {
+    "power": {
+      "solar_panel_voltage": 32.5,
+      "battery_charge": 85.0,
+      "power_consumption": 5.2
+    },
+    "thermal": {
+      "panel_temp": 25.4,
+      "battery_temp": 28.2
+    },
+    "attitude": {
+      "gyro_x": 0.001,
+      "gyro_y": -0.002,
+      "gyro_z": 0.003
+    }
+  },
+  "instructions": {
+    "diagnostics": {
+      "compare_sat_id": "SAT-002",
+      "diagnostics_type": "thermal_comparison"
+    },
+    "relay": {
+      "ground_station_id": "GS-001",
+      "relay_window_start": "2024-10-18T08:45:00Z",
+      "relay_window_end": "2024-10-18T09:00:00Z"
+    }
+  }
+}

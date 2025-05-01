@@ -1,0 +1,19 @@
+{
+    "TYPE": "TM",
+    "SOURCE": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/files_Test/tm.txt",
+    "DESTINATION": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/COSMOS_Control/Execution/OISL/files_received/tm.txt",
+    "CONTENT": [
+        {
+            "SUBSYSTEM": "NOVATEL_OEM615",
+            "PACKET_NAME": "NOVATEL_OEM615_DATA_TLM",
+            "PARAMETER_NAME": "ECI_X",
+            "VALUE": 5000
+        },
+        {
+            "SUBSYSTEM": "NOVATEL_OEM615",
+            "PACKET_NAME": "NOVATEL_OEM615_DATA_TLM",
+            "PARAMETER_NAME": "ECI_Y",
+            "VALUE": 7000
+        }
+    ]
+}

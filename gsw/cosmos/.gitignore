@@ -1,0 +1,7 @@
+outputs/*
+Gemfile
+Gemfile.lock
+tmp
+COMPONENTS/
+procedures/tmp.rb
+build/

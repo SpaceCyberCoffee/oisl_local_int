@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nos3-mission-cfg>
+	<start-time>814048200.0</start-time>
+	<gsw>openc3</gsw>
+	<number-spacecraft>3</number-spacecraft>
+	<sc-1-cfg>sc-full-config.xml</sc-1-cfg>
+	<sc-2-cfg>sc-full-config_FORWARD.xml</sc-2-cfg>
+	<sc-3-cfg>sc-full-config_BACKWARD.xml</sc-3-cfg>
+</nos3-mission-cfg>

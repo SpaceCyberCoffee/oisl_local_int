@@ -1,0 +1,12 @@
+{   
+    "TYPE": "CMD",
+    "SOURCE": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/files_Test/cmd.txt",
+    "DESTINATION": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/COSMOS_Control/Execution/OISL/files_received/cmd.txt",
+    "CONTENT": 
+        {
+        "SUBSYSTEM": "GENERIC_ADCS_DEBUG",
+        "COMMAND_NAME": "GENERIC_ADCS_SET_MODE_CC",
+        "PARAMETER": "GNC_MODE",
+        "PARAMETER_VALUE": "SUNSAFE_MODE"
+        }
+}

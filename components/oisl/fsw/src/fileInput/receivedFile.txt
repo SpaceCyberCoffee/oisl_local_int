@@ -1,0 +1,67 @@
+{   
+    "TYPE": "TEXT",
+    "SOURCE": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/files_Test/plainText.txt",
+    "DESTINATION": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/components/oisl/fsw/src/fileInput/plainText.txt",
+    "CONTENT": 
+        "La ricerca della felicitÃ  (dove sta, fra'?)
+        Io sognavo di spiccare il volo (seh)
+        Ora che volo Ã¨ tutta mia la cittÃ  (la cittÃ )
+        Ma non ha senso se volo da solo
+        E guardo avanti e non mi volto mai (non voltarti mai)
+        Come fate ad amare per finta?
+        Passa il tempo, ma non svolto mai (mai)
+        Buttami giÃ¹ dal cielo dammi una spinta
+        Tatuaggi in vista come un ribelle
+        Pensavamo di spaccare il mondo
+        Invece ha vinto chi ce li ha sotto pelle
+        E guardiamo tutto andare a fondo
+        Vedo male e solo come un cane
+        Forse Ã¨ meglio se non metto a fuoco
+        Annuso catrame e filigrane
+        L'emozione dura troppo poco
+        Sai che non c'Ã¨ amore se
+        Mi stai usando e io uso te
+        I soldi parlano
+        E tu li ascolti piÃ¹ di quanto ascolti me
+        Siamo sempre soli, sÃ¬
+        Siamo davvero liberi
+        I giorni passano
+        E li vivo come se fossero gli ultimi
+        Certe volte vorrei piangere
+        Per provarti cosa so provare
+        Ma non mi escono le lacrime
+        Dici: "L'amore non si puÃ² comprare" (non si puÃ²)
+        Guardo solo i colori dei soldi
+        CosÃ¬ ho un arcobaleno in tasca
+        Ancora inseguo dei biglietti sporchi
+        E alla fine la somma non basta (non basta mai)
+        Tra la paranoia e il paradiso
+        L'ascensore va al decimo cielo
+        Ma si Ã¨ rotto ed Ã¨ bloccato al primo
+        Ti assicuro, nessuno Ã¨ sincero (nessuno fra')
+        E il mio cuore Ã¨ senza batteria
+        E nessuno riesce a ripararlo
+        Ã meglio se non mi fai compagnia
+        Te l'hanno detto che sono un bastardo
+        Sai che non c'Ã¨ amore se
+        Mi stai usando e io uso te
+        I soldi parlano
+        E tu li ascolti piÃ¹ di quanto ascolti me
+        Siamo sempre soli, sÃ¬
+        Siamo davvero liberi
+        I giorni passano
+        E li vivo come se fossero gli ultimi (ah, yeah)
+        Ma tutte quelle tipe, quelle banconote le hai viste
+        Mi chiedi come faccio a essere sempre triste?
+        Tu sei perduto quando il vento soffia via le piste
+        O sei nato per 'sta vita oppure non esiste
+        Affoghiamo dentro al Moet & Chandon
+        Le tue frasi d'amore tutte uguali, un carillon (seh)
+        E quando arrivo in alto poi non so piÃ¹ scendere
+        Una stella Ã¨ sempre sola perchÃ© pensa solo a splendere
+        Prova a farmi sanguinare senza che mi buchi
+        Provami a scottare, sÃ¬, ma senza che mi bruci
+        Prova a farmi innamorare senza trucchi
+        Rendimi felice quando spengono 'ste luci
+        Sai che non c'Ã¨ amore se
+        Mi stai us
